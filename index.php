@@ -13,7 +13,7 @@ and open the template in the editor.
         <h1>Horoscope calculator</h1>
         <h2>What's your sign? Find out quickly here:</h2>
         <div>
-            <form action='signScript.php' method='post'>
+            <form action='signResult.php' method='post'>
                 <select name='day' id='chosenday' required>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
