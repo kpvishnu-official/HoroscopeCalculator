@@ -15,7 +15,7 @@ include 'signScript.php';
         </div>
         <div>
             <?php
-            calcSign($_POST['day'], $_POST['month']);
+            exceptionHandler($_POST['day'], $_POST['month']);
             ?>
         </div>
     </body>
