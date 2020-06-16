@@ -12,13 +12,9 @@ require_once('signScript.php');
         </title>
     </head>
     <body>
-        <div>
-            <h1>Your sign is...</h1>
-        </div>
-        <div>
             <?php
+            //call exceptionHandler to check if input date is correct. This then sparks chain of functions accordingly
             exceptionHandler($_POST['day'], $_POST['month']);
             ?>
-        </div>
     </body>
 </html>

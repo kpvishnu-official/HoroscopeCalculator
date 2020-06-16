@@ -7,9 +7,9 @@ function exceptionHandler($day, $month) {
     $thirtyOneExceptions = ['sep', 'apr', 'jun', 'nov'];
     $febExceptions = [30, 31];
     if ($day == 31 && in_array($month, $thirtyOneExceptions)) {
-        echo "Oops! Not sure that's a calendar day. Go back and try again!";
+        echo "<div id='resultintro'>" . "Oops! Not sure that's a calendar day. Go back and try again!" . "</div>";
     } elseif ($month == 'feb' && in_array($day, $febExceptions)) {
-        echo "Oops! Not sure that's a calendar day. Go back and try again!";
+        echo "<div id='resultintro'>" . "Oops! Not sure that's a calendar day. Go back and try again!" . "</div>";
     } else {
         //run horoscopeCalc function with correct dates input
         horoscopeCalc($day, $month);
@@ -23,7 +23,7 @@ function january($day) {
     } else {
         $sign = 'Aquarius';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function february($day) {
@@ -32,7 +32,7 @@ function february($day) {
     } else {
         $sign = 'Pisces';
     }
-    echo "<div id='result'>" . $sign . "</div>";
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function march($day) {
@@ -41,7 +41,7 @@ function march($day) {
     } else {
         $sign = 'Aries';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function april($day) {
@@ -50,7 +50,7 @@ function april($day) {
     } else {
         $sign = 'Taurus';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function may($day) {
@@ -59,7 +59,7 @@ function may($day) {
     } else {
         $sign = 'Gemini';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function june($day) {
@@ -68,7 +68,7 @@ function june($day) {
     } else {
         $sign = 'Cancer';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function july($day) {
@@ -77,7 +77,7 @@ function july($day) {
     } else {
         $sign = 'Leo';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function august($day) {
@@ -86,7 +86,7 @@ function august($day) {
     } else {
         $sign = 'Virgo';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function september($day) {
@@ -95,7 +95,7 @@ function september($day) {
     } else {
         $sign = 'Libra';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function october($day) {
@@ -104,7 +104,7 @@ function october($day) {
     } else {
         $sign = 'Scorpio';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function november($day) {
@@ -113,7 +113,7 @@ function november($day) {
     } else {
         $sign = 'Sagittarius';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 function december($day) {
@@ -122,7 +122,7 @@ function december($day) {
     } else {
         $sign = 'Capricorn';
     }
-    echo '<div>' . $sign . '</div>';
+    echo "<div id='resultintro'><h2>Your sign is...</h2></div>" . "<div id='result'>" . $sign . "</div>";
 }
 
 //This function below calls one of the 12 functions above based on date entered

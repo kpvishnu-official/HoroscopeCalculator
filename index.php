@@ -12,9 +12,9 @@ and open the template in the editor.
         <title>Horoscope calculator</title>
     </head>
     <body>
-        <h1>Horoscope calculator</h1>
-        <h2>What's your sign? Find out quickly here:</h2>
-        <div>
+        <div id="h1div"><h1>Horoscope calculator</h1></div>
+        <div id="h2div"><h2>What's your sign? Find out quickly here:</h2></div>
+        <div id='formdiv'>
             <form action='signResult.php' method='post'>
                 <select name='day' id='chosenday' required>
                     <option value='1'>1</option>
