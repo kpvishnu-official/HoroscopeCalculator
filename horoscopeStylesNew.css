@@ -1,0 +1,69 @@
+
+#formdiv {
+    font-family: 'Bellota', cursive;
+    font-size: 34px;
+    color: black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#result {
+    font-family: 'Bellota', cursive;
+    font-size: 100px;    
+    font-weight: bold;
+    color: white;
+    width: 30%;
+    text-align: center;
+    position: fixed;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#resultintro, #h1div {
+    font-family: 'Bellota', cursive;
+    font-size: 50px;    
+    font-weight: bold;
+    color: white;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#h2div {
+    font-family: 'Bellota', cursive;
+    font-size: 38px;    
+    font-weight: bold;
+    color: white;
+    width: 85%;
+    margin: auto;
+}
+
+body {
+    color: white;
+    font-family: 'Bellota', cursive;
+    font-size: 34px;
+    background-image: url("images/StarrySky.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+.button {
+    font-family: 'Bellota', cursive;
+    font-size: 34px;
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}

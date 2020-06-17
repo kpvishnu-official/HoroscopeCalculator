@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-        <link href="horoscopeStyles.css" rel="stylesheet" type="text/css"/>
+        <link href="horoscopeStylesNew.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet">
         <title>Horoscope calculator</title>
     </head>
@@ -16,7 +16,7 @@ and open the template in the editor.
         <div id="h2div"><h2>What's your sign? Find out quickly here:</h2></div>
         <div id='formdiv'>
             <form action='signResult.php' method='post'>
-                <select name='day' id='chosenday' required>
+                <select name='day' class='button' required>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -49,7 +49,7 @@ and open the template in the editor.
                     <option value='30'>30</option>
                     <option value='31'>31</option>
                 </select>
-                <select name='month' id='chosenmonth' required>
+                <select name='month' class='button' required>
                     <option value='jan'>January</option>
                     <option value='feb'>February</option>
                     <option value='mar'>March</option>
@@ -63,7 +63,7 @@ and open the template in the editor.
                     <option value='nov'>November</option>
                     <option value='dec'>December</option>
                 </select>
-                <button type='submit'>So what's my sign?</button>
+                <button class='button' type='submit'>So what's my sign?</button>
             </form> 
         </div>
     </body>
